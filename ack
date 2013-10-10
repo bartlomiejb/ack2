@@ -495,7 +495,7 @@ sub print_line_with_options {
             push @line_parts, $filename, $line_no;
         }
 
-        if( $print_column && $separator eq ':' ) {
+        if( $print_column ) {
             push @line_parts, get_match_column();
         }
     }
